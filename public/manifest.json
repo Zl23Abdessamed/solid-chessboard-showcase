@@ -1,0 +1,16 @@
+{
+  "name": "solid-chessboard",
+  "short_name": "Chessboard",
+  "description": "A highly customizable, performant chessboard component for SolidJS.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F14",
+  "theme_color": "#38bdf8",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

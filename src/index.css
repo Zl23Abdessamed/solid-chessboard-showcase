@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+
+html { scroll-behavior: smooth; background-color: rgb(0, 3, 17); }
+@keyframes board-float {
+  0%,100% { transform: rotateX(16deg) rotateY(-18deg) translateY(0); }
+  50%     { transform: rotateX(9deg)  rotateY(-8deg)  translateY(-14px); }
+}
+@keyframes glow-pulse { 0%,100% { opacity:.5; transform:scale(1); } 50% { opacity:.95; transform:scale(1.1); } }
+@keyframes orb-bob { 0%,100% { transform: translateZ(64px) translateY(0); } 50% { transform: translateZ(64px) translateY(-10px); } }
+@keyframes ring-spin { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .bf,.gp,.ob,.rs,.kt,.kh { animation: none; }
+  .ob { transform: translateZ(64px); }
+  .kt { transform: translate(100%,600%); }
+}

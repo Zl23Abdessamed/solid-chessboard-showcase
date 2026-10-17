@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solid-chessboard.vercel.app/sitemap.xml
